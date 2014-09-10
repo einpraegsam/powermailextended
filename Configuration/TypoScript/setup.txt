@@ -1,0 +1,79 @@
+# Add new Field
+plugin.tx_powermail {
+	view {
+		templateRootPath >
+		templateRootPaths {
+			10 = EXT:powermail/Resources/Private/Templates/
+		}
+		partialRootPath >
+		partialRootPaths {
+			10 = EXT:powermail/Resources/Private/Partials/
+			20 = EXT:powermailextended/Resources/Private/Partials/
+		}
+		layoutRootPath >
+		layoutRootPaths {
+			10 = EXT:powermail/Resources/Private/Layouts/
+		}
+	}
+}
+
+
+# Add new Validation
+plugin.tx_powermail {
+	settings.setup {
+		validation {
+			native = 1
+			client = 1
+			server = 1
+			customValidation {
+				100 = \In2code\Powermailextended\Domain\Validator\ZipValidator
+			}
+		}
+	}
+	_LOCAL_LANG.default.validationerror_validation.100 = Please add a ZIP with 8 begginning
+	_LOCAL_LANG.de.validationerror_validation.100 = Bitte eine bayerische PLZ eintragen
+}
+
+page.includeJSFooter.powermailextended = EXT:powermailextended/Resources/Public/JavaScripts/ZipValidation.js
+
+
+# Add new Field Properties
+config.tx_extbase{
+	persistence{
+		classes{
+			In2code\Powermail\Domain\Model\Form {
+				subclasses {
+					0 = In2code\Powermailextended\Domain\Model\Form
+				}
+			}
+			In2code\Powermail\Domain\Model\Page {
+				subclasses {
+					0 = In2code\Powermailextended\Domain\Model\Page
+				}
+			}
+			In2code\Powermail\Domain\Model\Field {
+				subclasses {
+					0 = In2code\Powermailextended\Domain\Model\Field
+				}
+			}
+			In2code\Powermailextended\Domain\Model\Form {
+				mapping {
+					tableName = tx_powermail_domain_model_forms
+				}
+			}
+			In2code\Powermailextended\Domain\Model\Page {
+				mapping {
+					tableName = tx_powermail_domain_model_pages
+				}
+			}
+			In2code\Powermailextended\Domain\Model\Field {
+				mapping {
+					tableName = tx_powermail_domain_model_fields
+				}
+			}
+		}
+	}
+	objects {
+		In2code\Powermail\Domain\Repository\FormRepository.className = In2code\Powermailextended\Domain\Repository\FormRepository
+	}
+}
