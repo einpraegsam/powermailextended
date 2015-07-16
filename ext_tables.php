@@ -11,7 +11,6 @@
 /**
  * extend powermail fields tx_powermail_domain_model_fields
  */
-\TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA('tx_powermail_domain_model_fields');
 $tempColumns = array (
 	'tx_powermailextended_powermail_text' => array(
 		'exclude' => 1,
@@ -33,7 +32,7 @@ $tempColumns = array (
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
 	'tx_powermail_domain_model_fields',
 	$tempColumns,
-	1
+	TRUE
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
 	'tx_powermail_domain_model_fields',
