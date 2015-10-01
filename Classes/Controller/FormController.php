@@ -1,20 +1,23 @@
 <?php
 namespace In2code\Powermailextended\Controller;
 
+use In2code\Powermail\Controller\FormController as FormControllerPowermail;
+use In2code\Powermail\Domain\Model\Mail;
+
 /**
- * Using a Slot to call a Powermail Signal
+ * Class FormController
  *
- * Class FormControllerExtended
  * @package In2code\Powermailextended\Controller
  */
 class FormController {
 
 	/**
-	 * @param \In2code\Powermail\Domain\Model\Mail $mail
+	 * @param Mail $mail
 	 * @param string $hash
-	 * @param \In2code\Powermail\Controller\FormController $pObj
+	 * @param FormControllerPowermail $pObj
+	 * @return void
 	 */
-	public function manipulateMailObjectOnCreate($mail, $hash, $pObj) {
+	public function manipulateMailObjectOnCreate(Mail $mail, $hash, $pObj) {
 		foreach ($mail->getAnswers() as $answer) {
 			if ($answer->getValue() === 'alex') {
 				$answer->setValue('alexander');
