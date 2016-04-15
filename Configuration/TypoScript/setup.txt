@@ -58,17 +58,17 @@ config.tx_extbase{
 			}
 			In2code\Powermailextended\Domain\Model\Form {
 				mapping {
-					tableName = tx_powermail_domain_model_forms
+					tableName = tx_powermail_domain_model_form
 				}
 			}
 			In2code\Powermailextended\Domain\Model\Page {
 				mapping {
-					tableName = tx_powermail_domain_model_pages
+					tableName = tx_powermail_domain_model_page
 				}
 			}
 			In2code\Powermailextended\Domain\Model\Field {
 				mapping {
-					tableName = tx_powermail_domain_model_fields
+					tableName = tx_powermail_domain_model_field
 				}
 			}
 		}

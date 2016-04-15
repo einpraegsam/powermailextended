@@ -12,10 +12,10 @@
 
 $EM_CONF[$_EXTKEY] = array (
 	'title' => 'powermailextended',
-	'description' => 'Sample Extension to extend powermail 2.1: Add new validators, Add new Fieldtypes or Add new Field Properties',
+	'description' => 'Sample Extension to extend powermail: Add new validators, Add new Fieldtypes or Add new Field Properties',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '2.5.0',
+	'version' => '3.0.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -34,8 +34,8 @@ $EM_CONF[$_EXTKEY] = array (
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.2.0-7.99.99',
-			'powermail' => '2.1.0-2.99.99',
+			'typo3' => '7.6.0-8.99.99',
+			'powermail' => '3.0.0-3.99.99',
 		),
 		'conflicts' => array(),
 		'suggests' => array(),

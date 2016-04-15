@@ -9,7 +9,7 @@
 );
 
 /**
- * extend powermail fields tx_powermail_domain_model_fields
+ * extend powermail fields tx_powermail_domain_model_field
  */
 $tempColumns = array (
 	'tx_powermailextended_powermail_text' => array(
@@ -30,11 +30,11 @@ $tempColumns = array (
 	),
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-	'tx_powermail_domain_model_fields',
+	'tx_powermail_domain_model_field',
 	$tempColumns
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-	'tx_powermail_domain_model_fields',
+	'tx_powermail_domain_model_field',
 	'--div--;Powermailextended, tx_powermailextended_powermail_text, tx_powermailextended_powermail_readonly',
 	'',
 	'after:own_marker_select'
