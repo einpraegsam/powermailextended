@@ -9,23 +9,21 @@ use TYPO3\CMS\Core\Mail\MailMessage;
  *
  * @package powermailextend
  */
-class SendMailService {
+class SendMailService
+{
 
-	/**
-	 * Manipulate message object short before powermail send the mail
-	 *
-	 * @param MailMessage $message
-	 * @param array $email
-	 * @param Mail $mail
-	 * @param array $settings
-	 * @param string $type Email to "sender" or "receiver"
-	 */
-	public function manipulateMail($message, $email, $mail, $settings, $type) {
-		// overwrite the receiver
-		$message->setTo(
-			array(
-				'anotheremail@domain.org' => 'receiverName'
-			)
-		);
-	}
+    /**
+     * Manipulate message object short before powermail send the mail
+     *
+     * @param MailMessage $message
+     */
+    public function manipulateMail($message)
+    {
+        // overwrite the receiver
+        $message->setTo(
+            array(
+                'anotheremail@domain.org' => 'receiverName'
+            )
+        );
+    }
 }
