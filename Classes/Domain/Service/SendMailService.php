@@ -1,7 +1,6 @@
 <?php
 namespace In2code\Powermailextended\Domain\Service;
 
-use In2code\Powermail\Domain\Model\Mail;
 use TYPO3\CMS\Core\Mail\MailMessage;
 
 /**
@@ -21,9 +20,9 @@ class SendMailService
     {
         // overwrite the receiver
         $message->setTo(
-            array(
+            [
                 'anotheremail@domain.org' => 'receiverName'
-            )
+            ]
         );
     }
 }
