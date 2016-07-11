@@ -17,14 +17,16 @@ class SendMailService
      *
      * @param MailMessage $message
      * @param array $email
-     * @param SendMailServicePowermail $originalService
+     * @param SendMailServicePowermail $sendMailService
      */
-    public function manipulateMail($message, &$email, SendMailServicePowermail $originalService)
+    public function manipulateMail($message, &$email, SendMailServicePowermail $sendMailService)
     {
-        // overwrite the receiver in the email array to have it saved correctly!
-        $email['receiverName'] = 'John Mega';
-        $email['receiverEmail'] = 'john@mega.com';
+        // change receiver name and email for a defined senderemail (as an example)
+        if ($sendMailService->getMail()->getSenderMail() === 'manipulatereceiver@powermailextended.org') {
+            $email['receiverName'] = 'in2code.de';
+            $email['receiverEmail'] = 'alex@in2code.de';
 
-        $message->setTo([$email['receiverEmail'] => $email['receiverName']]);
+            $message->setTo([$email['receiverEmail'] => $email['receiverName']]);
+        }
     }
 }

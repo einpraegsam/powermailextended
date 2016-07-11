@@ -17,10 +17,10 @@ $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
 //);
 
 // Change receiver mail
-//$signalSlotDispatcher->connect(
-//    'In2code\Powermail\Domain\Service\SendMailService',
-//    'sendTemplateEmailBeforeSend',
-//    'In2code\Powermailextended\Domain\Service\SendMailService',
-//    'manipulateMail',
-//    false
-//);
+$signalSlotDispatcher->connect(
+    \In2code\Powermail\Domain\Service\SendMailService::class,
+    'sendTemplateEmailBeforeSend',
+    \In2code\Powermailextended\Domain\Service\SendMailService::class,
+    'manipulateMail',
+    false
+);
