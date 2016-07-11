@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
         Add new validators, Add new Fieldtypes or Add new Field Properties',
     'category' => 'plugin',
     'shy' => 0,
-    'version' => '3.1.0',
+    'version' => '3.2.0',
     'dependencies' => '',
     'conflicts' => '',
     'priority' => '',
@@ -36,7 +36,7 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'typo3' => '7.6.0-8.99.99',
-            'powermail' => '3.0.0-3.99.99',
+            'powermail' => '3.3.0-3.99.99',
         ],
         'conflicts' => [],
         'suggests' => [],
