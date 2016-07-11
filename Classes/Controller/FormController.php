@@ -17,10 +17,9 @@ class FormController
      */
     public function manipulateMailObjectOnCreate(Mail $mail)
     {
-        foreach ($mail->getAnswers() as $answer) {
-            if ($answer->getValue() === 'alex') {
-                $answer->setValue('alexander');
-            }
+        // example how to get an answer from the mail object and manipulate a value (set firstname if email fits)
+        if ($mail->getAnswersByFieldMarker()['email']->getValue() === 'manipulatesender@powermailextended.org') {
+            $mail->getAnswersByFieldMarker()['firstname']->setValue('heyholetsgo');
         }
     }
 }
