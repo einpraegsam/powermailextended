@@ -1,7 +1,7 @@
 {
   "name": "in2code/powermailextended",
   "description": "Example addon extension to TYPO3 extension powermail",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "keywords": ["typo3", "form", "powermail", "powermailextended"],
   "homepage": "https://forge.typo3.org/projects/extension-powermail",
   "authors": [
