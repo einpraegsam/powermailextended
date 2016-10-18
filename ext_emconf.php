@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
         Add new validators, Add new Fieldtypes or Add new Field Properties',
     'category' => 'plugin',
     'shy' => 0,
-    'version' => '3.2.0',
+    'version' => '3.2.1',
     'dependencies' => '',
     'conflicts' => '',
     'priority' => '',
