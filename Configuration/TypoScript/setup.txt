@@ -30,7 +30,7 @@ plugin.tx_powermail {
 			}
 		}
 	}
-	_LOCAL_LANG.default.validationerror_validation.100 = Please add a ZIP with 8 begginning
+	_LOCAL_LANG.default.validationerror_validation.100 = Please add a ZIP beginning with 8
 	_LOCAL_LANG.de.validationerror_validation.100 = Bitte eine bayerische PLZ eintragen
 }
 
