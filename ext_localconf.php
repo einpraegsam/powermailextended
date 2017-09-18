@@ -18,7 +18,7 @@ $signalSlotDispatcher->connect(
 
 // Change receiver mail example
 $signalSlotDispatcher->connect(
-    \In2code\Powermail\Domain\Service\SendMailService::class,
+    \In2code\Powermail\Domain\Service\Mail\SendMailService::class,
     'sendTemplateEmailBeforeSend',
     \In2code\Powermailextended\Domain\Service\SendMailService::class,
     'manipulateMail',
