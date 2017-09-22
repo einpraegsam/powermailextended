@@ -1,7 +1,7 @@
 <?php
 namespace In2code\Powermailextended\Domain\Service;
 
-use In2code\Powermail\Domain\Service\SendMailService as SendMailServicePowermail;
+use In2code\Powermail\Domain\Service\Mail\SendMailService as SendMailServicePowermail;
 use TYPO3\CMS\Core\Mail\MailMessage;
 
 /**
