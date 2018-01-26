@@ -1,18 +1,12 @@
 # Add new Field
 plugin.tx_powermail {
 	view {
-		templateRootPath >
 		templateRootPaths {
-			10 = EXT:powermail/Resources/Private/Templates/
 		}
-		partialRootPath >
 		partialRootPaths {
-			10 = EXT:powermail/Resources/Private/Partials/
 			20 = EXT:powermailextended/Resources/Private/Partials/
 		}
-		layoutRootPath >
 		layoutRootPaths {
-			10 = EXT:powermail/Resources/Private/Layouts/
 		}
 	}
 }
