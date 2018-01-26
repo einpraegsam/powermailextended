@@ -6,9 +6,7 @@
 			{field.txPowermailextendedPowermailText}
 		</h2>
 	</f:if>
-	<label for="powermail_field_{field.marker}" class="{settings.styles.framework.labelClasses}" title="{field.description}">
-		<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
-	</label>
+	<f:render partial="Form/FieldLabel" arguments="{_all}" />xx
 	<div class="{settings.styles.framework.fieldWrappingClasses}">
 		<f:if condition="{field.txPowermailextendedPowermailReadonly}">
 			<f:then>
