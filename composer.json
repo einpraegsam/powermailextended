@@ -1,7 +1,12 @@
 {
   "name": "in2code/powermailextended",
   "description": "Example addon extension to TYPO3 extension powermail",
-  "keywords": ["typo3", "form", "powermail", "powermailextended"],
+  "keywords": [
+    "typo3",
+    "form",
+    "powermail",
+    "powermailextended"
+  ],
   "homepage": "https://forge.typo3.org/projects/extension-powermail",
   "authors": [
     {
@@ -13,7 +18,7 @@
   "license": "GPL-3.0",
   "require": {
     "typo3/cms": ">=7.6.0 <9.0.0",
-    "in2code/powermail": ">=3.3.0 <5.0.0"
+    "in2code/powermail": ">=5.3.0 <6.0.0"
   },
   "autoload": {
     "psr-4": {
