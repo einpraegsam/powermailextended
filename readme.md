@@ -2,6 +2,7 @@
 
 # Changelog
 
+- 5.0.0 Update for powermail 8.x with TYPO3 10
 - 4.0.0 Update for powermail 5.3 or newer
 - 3.3.0 Update Parsley JavaScript Validator
 - 3.2.1 Small bugfix
