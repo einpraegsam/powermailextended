@@ -1,11 +1,14 @@
 /**
- * <input type="text" data-parsley-custom100="1" data-parsley-error-message="Please try again" />
+ * <input type="text" data-powermail-custom100="80000" data-powermail-error-message="Please try again" />
  */
-window.Parsley.addValidator(
-	'custom100', function (value, requirement) {
-		if (value >= 80000) {
-			return true;
+const forms = document.querySelectorAll('.powermail_form');
+forms.forEach(function(form) {
+	let formValidation = form.powermailFormValidation;
+
+	formValidation.addValidator('custom100', function(field) {
+		if (field.hasAttribute('data-powermail-custom100')) {
+			return field.value < parseInt(field.getAttribute('data-powermail-custom100'));
 		}
 		return false;
-	}, 32)
-	.addMessage('en', 'custom100', 'Error');
+	});
+});

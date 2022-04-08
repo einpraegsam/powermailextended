@@ -29,6 +29,7 @@ plugin.tx_powermail {
 }
 
 page.includeJSFooter.powermailextended = EXT:powermailextended/Resources/Public/JavaScripts/ZipValidation.js
+page.includeJSFooter.powermailextended.defer = 1
 
 
 # Add new Field Properties

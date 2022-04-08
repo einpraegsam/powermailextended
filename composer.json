@@ -15,10 +15,10 @@
     }
   ],
   "type": "typo3-cms-extension",
-  "license": "GPL-3.0",
+  "license": "GPL-2.0-or-later",
   "require": {
-    "typo3/cms": "^10.4",
-    "in2code/powermail": "^8.0"
+    "typo3/cms-core": "^11.5",
+    "in2code/powermail": ">=9.0.0"
   },
   "autoload": {
     "psr-4": {
