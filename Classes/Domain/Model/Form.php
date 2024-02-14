@@ -18,16 +18,16 @@ class Form extends \In2code\Powermail\Domain\Model\Form
     protected $pages;
 
     /**
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $pages
+     * @param ObjectStorage $pages
      * @return void
      */
-    public function setPages(ObjectStorage $pages)
+    public function setPages(ObjectStorage $pages): void
     {
         $this->pages = $pages;
     }
 
     /**
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage
+     * @return ObjectStorage|array
      */
     public function getPages()
     {

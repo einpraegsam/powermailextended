@@ -7,6 +7,7 @@
     "powermail",
     "powermailextended"
   ],
+	"version": "1.0.0",
   "homepage": "https://forge.typo3.org/projects/extension-powermail",
   "authors": [
     {
@@ -24,5 +25,10 @@
     "psr-4": {
       "In2code\\Powermailextended\\": "Classes"
     }
-  }
+  },
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "powermailextended"
+		}
+	}
 }
