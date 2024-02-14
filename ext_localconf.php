@@ -29,4 +29,8 @@ call_user_func(function () {
         'manipulateMail',
         false
     );
+
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\In2code\Powermail\Domain\Repository\FormRepository::class] = [
+        'className' => \In2code\Powermailextended\Domain\Repository\FormRepository::class
+    ];
 });

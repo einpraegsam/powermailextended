@@ -18,18 +18,18 @@ class Page extends \In2code\Powermail\Domain\Model\Page
     protected $fields = null;
 
     /**
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $fields
+     * @param ObjectStorage $fields
      * @return void
      */
-    public function setFields(ObjectStorage $fields)
+    public function setFields(ObjectStorage $fields): void
     {
         $this->fields = $fields;
     }
 
     /**
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage
+     * @return ObjectStorage
      */
-    public function getFields()
+    public function getFields(): ObjectStorage
     {
         return $this->fields;
     }
